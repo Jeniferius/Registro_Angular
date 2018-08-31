@@ -1,0 +1,13 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  Name: <input type="text" formControlName="name"><br>
+  Surname: <input type="text" formControlName="surname"><br>
+  Username: <input type="text" formControlName="username"><br>
+  Password: <input type="text" formControlName="password"><br>
+  Password Rep : <input type="text" formControlName="passwordRep"><br>
+  Mail : <input type="text" formControlName="mail"><br>
+  Address : <input type="text" formControlName="address"><br>
+  Age : <input type="text" formControlName="age"><br><br>
+
+
+  <button type="submit" [disabled]="!form.valid">LOGIN</button>
+</form>
